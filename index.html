@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rumah Belajar Al-Fikr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="day">   <!-- default -->
+<body class="night">
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+  <img src="assets/img/logo-alfikr.png" alt="Logo Rumah Belajar Al-Fikr" class="logo">
+  <span class="brand-text">
+    <span class="brand-top">Rumah Belajar</span>
+    <span class="brand-bottom">Al-Fikr</span>
+  </span>
+</a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+  </div>
+
+</header>
+
+<!-- Overlay & Side Menu -->
+<div class="overlay" id="overlay"></div>
+
+<nav class="side-menu" id="sideMenu">
+  <div class="menu-header">
+    <h2>Menu</h2>
+    <button class="close-btn" id="closeMenu">✕</button>
+  </div>
+
+  <a href="index.html">Beranda</a>
+  <a href="about.html">Tentang</a>
+  <a href="article.html">Artikel</a>
+  <a href="kontak.html">Kontak</a>
+
+  <div class="menu-divider"></div>
+
+  <a href="login.html" class="login-santri">Login Santri</a>
+</nav>
+
+<!-- HERO VISUAL -->
+<section class="hero-visual" id="heroSection">
+
+  <!-- LANGIT -->
+  <div class="hero-sky">
+    <div class="sky-layer">
+
+      <div class="sky-quote">
+        <p data-day>Ilmu yang dirawat dengan adab,<br>akan tumbuh menjadi cahaya.</p>
+        <p data-night>Dalam hening, ilmu menemukan maknanya.</p>
+      </div>
+
+      <!-- Matahari -->
+      <div class="sun-wrapper">
+        <div class="sun"></div>
+        <svg class="cloud cloud-cover" viewBox="0 0 200 60">
+          <ellipse cx="60" cy="40" rx="60" ry="30"/>
+          <ellipse cx="120" cy="35" rx="50" ry="25"/>
+        </svg>
+      </div>
+
+      <!-- Bulan -->
+      <div class="moon"></div>
+
+    </div>
+
+    <!-- Bintang -->
+    <div class="stars"></div>
+
+    <!-- Awan -->
+    <div class="cloud-layer">
+      <img src="assets/img/clouds/cloud-1.svg" class="cloud cloud-1" data-speed="0.15">
+      <img src="assets/img/clouds/cloud-2.svg" class="cloud cloud-2" data-speed="0.25">
+      <img src="assets/img/clouds/cloud-3.svg" class="cloud cloud-3" data-speed="0.35">
+    </div>
+  </div>
+
+  <!-- MASJID -->
+  <img src="assets/img/masjid.png" alt="Masjid Al-Fikr" class="hero-masjid">
+
+</section>
+
+<main class="content">
+
+  <article class="post-card">
+
+    <!-- META / KATEGORI -->
+<a href="article.html" class="post-link" aria-label="Baca artikel Belajar sebagai Ikhtiar Bersama">
+    <header class="post-meta">
+      <span class="post-category">Artikel</span>
+    </header>
+</a>
+    <!-- HERO IMAGE -->
+    <div class="post-hero">
+      <img src="assets/img/article/article-1.jpg" alt="Ilustrasi artikel">
+    </div>
+
+    <!-- BODY PREVIEW -->
+    <div class="post-body">
+<a href="article-1.html" class="post-link" aria-label="Baca artikel Belajar sebagai Ikhtiar Bersama">
+      <h2 class="post-title">
+        Belajar sebagai Ikhtiar Bersama
+      </h2>
+</a>
+
+      <p class="post-lead">
+        Belajar sejatinya bukan sekadar aktivitas akademik
+      yang berlangsung di ruang kelas formal,
+      melainkan proses yang tumbuh dari relasi,
+      keteladanan, dan lingkungan yang memberi rasa aman.
+      </p>
+
+    </div>
+
+    <!-- AUTHOR -->
+    <footer class="post-author">
+      <img src="assets/img/logo-alfikr.png" alt="Emha Ainun Nadjib">
+      <div class="author-info">
+        <span class="author-name">Rumah Belajar Al-Fikr</span>
+        <span class="post-date">15 Desember 2025</span>
+      </div>
+    </footer>
+
+  </article>
+</main>
+
+<!-- PREVIEW CONTENT -->
+
+<!-- KEGIATAN TERBARU -->
+<section class="kegiatan-preview">
+
+  <div class="kegiatan-header">
+    <a href="kegiatan.html" class="post-link" aria-label="Baca kegiatan">
+      <h2 class="section-title">
+        Kegiatan Terbaru
+      </h2>
+</a>
+
+    <div class="kegiatan-nav">
+      <button class="nav-btn" id="kegiatanPrev">‹</button>
+      <button class="nav-btn" id="kegiatanNext">›</button>
+    </div>
+  </div>
+
+  <div class="kegiatan-scroll" id="kegiatanScroll">
+
+    <!-- CARD -->
+    <a href="kegiatan-1.html" class="kegiatan-card">
+      <img src="assets/img/kegiatan-1.jpg" alt="Kajian Warga">
+      <div class="kegiatan-info">
+        <h3>Berbagi Kasih, Menyemai Harapan</h3>
+        <p>Donasi Makanan & Minuman dari Keluarga Besar Ibu Mariana Untoro.</p>
+      </div>
+    </a>
+
+    <a href="kegiatan-2.html" class="kegiatan-card">
+      <img src="assets/img/kegiatan-2.jpg" alt="Belajar Anak">
+      <div class="kegiatan-info">
+        <h3>Peringatan Isra' Mi'raj Rasulullah SAW 1447 H</h3>
+        <p>Perlombaan santriwan dan santriwati serta tausiyah Peristiwa Agung Bagunda Nabi SAW</p>
+      </div>
+    </a>
+
+    <a href="kegiatan-3.html" class="kegiatan-card">
+      <img src="assets/img/kegiatan-3.jpg" alt="Belajar Anak">
+      <div class="kegiatan-info">
+        <h3>Semarak Menyambut Ramadhan</h3>
+        <p>Santri Rumah Belajar Al-Fikr Gelar Gotong Royong Bersihkan Masjid</p>
+      </div>
+    </a>
+
+  </div>
+
+</section>
+
+  <!-- PROGRAM -->
+<section class="program-preview reveal">
+
+  <a href="program.html" class="post-link" aria-label="Baca Program">
+      <h2 class="section-title">
+        Program Pembelajaran
+      </h2>
+</a>
+  <p class="section-desc">
+    Ruang belajar akademik, keagamaan, dan sosial yang terbuka bagi semua.
+  </p>
+
+  <div class="program-cards">
+
+    <article class="program-card">
+      <div class="icon">📘</div>
+      <h3>Keagamaan</h3>
+      <p>Bimbingan Iqro hingga pembiasaan membaca Al-Qur’an.</p>
+    </article>
+
+    <article class="program-card">
+      <div class="icon">➗</div>
+      <h3>Akademik</h3>
+      <p>Pendampingan konsep dasar matematika, penguatan kosa kata, percakapan, dan pemahaman bacaan bahasa inggris.</p>
+    </article>
+
+    <article class="program-card">
+      <div class="icon">📖</div>
+      <h3>Sosial</h3>
+      <p>Gotong royong menghidupkan kegiatan kemasyarakatan dan peringatan hari besar</p>
+    </article>
+
+  </div>
+
+</section>
+
+  <!-- FILOSOFI -->
+  <div class="preview-block filosofi">
+    <blockquote>
+      “Belajar bukan sekadar menambah tahu,  
+      tetapi menumbuhkan adab, kesadaran,  
+      dan tanggung jawab pada ilmu.”
+    </blockquote>
+    <a href="filosofi.html" class="preview-link center">
+      Baca Filosofi Al-Fikr →
+    </a>
+  </div>
+<!-- ===============================
+     INFORMASI PUBLIK
+================================ -->
+
+
+  <div class="content">
+
+    <div class="info-card">
+
+      <header class="info-header">
+        <h2 class="section-title">Informasi Publik</h2>
+        <p class="info-subtitle">Rumah Belajar Al-Fikr</p>
+      </header>
+
+      <p class="info-alamat">
+        📍 Gang Manunggal, Kp. Bongkor, RT 06 / RW 03 <br>
+        Kel. Ciumbuleuit, Kec. Cidadap, Kota Bandung, 40142.
+      </p>
+
+      <!-- MAP -->
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.933676765!2d107.604842!3d-6.865247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6d6f7a0d0e3%3A0x123456789abcdef!2sRumah%20Belajar%20Al-Fikr!5e0!3m2!1sid!2sid!4v2025"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- TOMBOL AKSI -->
+      <div class="info-actions">
+
+  <a href="https://maps.app.goo.gl/5oNnRkhVWRhmikLx8"
+     target="_blank"
+     class="btn-info">
+    Google Maps
+  </a>
+
+  <a href="https://wa.me/6289652626049"
+     target="_blank"
+     class="btn-info">
+    WhatsApp
+  </a>
+
+  <a href="mailto:alfikrlearninghouse@gmail.com"
+     class="btn-info">
+    Email
+  </a>
+
+</div>
+
+    </div>
+
+  </div>
+  
+<footer class="footer">
+  <p>© 2025 Rumah Belajar Al-Fikr</p>
+</footer>
+
+  <script src="assets/js/main.js">
+    const kegiatanScroll = document.getElementById("kegiatanScroll");
+const kegiatanPrev = document.getElementById("kegiatanPrev");
+const kegiatanNext = document.getElementById("kegiatanNext");
+
+kegiatanNext.addEventListener("click", () => {
+  kegiatanScroll.scrollBy({
+    left: 300,
+    behavior: "smooth"
+  });
+});
+
+kegiatanPrev.addEventListener("click", () => {
+  kegiatanScroll.scrollBy({
+    left: -300,
+    behavior: "smooth"
+  });
+});
+  </script>
+ 
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rumah Belajar Al-Fikr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="day">   <!-- default -->
+<body class="night">
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+  <img src="assets/img/logo-alfikr.png" alt="Logo Rumah Belajar Al-Fikr" class="logo">
+  <span class="brand-text">
+    <span class="brand-top">Rumah Belajar</span>
+    <span class="brand-bottom">Al-Fikr</span>
+  </span>
+</a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+  </div>
+
+</header>
+
+<!-- Overlay & Side Menu -->
+<div class="overlay" id="overlay"></div>
+
+<nav class="side-menu" id="sideMenu">
+  <div class="menu-header">
+    <h2>Menu</h2>
+    <button class="close-btn" id="closeMenu">✕</button>
+  </div>
+
+  <a href="index.html">Beranda</a>
+  <a href="about.html">Tentang</a>
+  <a href="article.html">Artikel</a>
+  <a href="kontak.html">Kontak</a>
+
+  <div class="menu-divider"></div>
+
+  <a href="login.html" class="login-santri">Login Santri</a>
+</nav>
+
+<!-- HERO VISUAL -->
+<section class="hero-visual login-hero">
+
+  <div class="hero-sky">
+    <div class="sky-layer">
+
+      <!-- Matahari -->
+      <div class="sun-wrapper">
+        <div class="sun"></div>
+        <svg class="cloud cloud-cover" viewBox="0 0 200 60">
+          <ellipse cx="60" cy="40" rx="60" ry="30"/>
+          <ellipse cx="120" cy="35" rx="50" ry="25"/>
+        </svg>
+      </div>
+
+      <div class="moon"></div>
+
+    </div>
+
+    <div class="stars"></div>
+
+    <div class="cloud-layer">
+      <img src="assets/img/clouds/cloud-1.svg" class="cloud cloud-1">
+      <img src="assets/img/clouds/cloud-2.svg" class="cloud cloud-2">
+      <img src="assets/img/clouds/cloud-3.svg" class="cloud cloud-3">
+    </div>
+  </div>
+
+  <img src="assets/img/masjid.png" class="hero-masjid">
+
+<!-- LOGIN LAYER -->
+<div class="login-overlay">
+  <div class="login-box">
+    <h1>Login Santri</h1>
+    <p>Masuk menggunakan identitas santri untuk melihat dan menyetorkan hafalan.</p>
+
+    <form id="loginForm">
+      <input 
+        type="text" 
+        id="username"
+        placeholder="Username Santri"
+        autocomplete="username"
+        required
+      >
+
+      <input 
+        type="password" 
+        id="password"
+        placeholder="Password"
+        autocomplete="current-password"
+        required
+      >
+
+      <button type="submit" id="loginBtn">Masuk</button>
+
+      <p id="errorMsg" class="login-error"></p>
+    </form>
+  </div>
+</div>
+
+<script type="module" src="login.js"></script>
+
+</section>
+
+<footer class="footer">
+  <p>© 2025 Rumah Belajar Al-Fikr</p>
+</footer>
+
+  <script src="assets/js/main.js">
+    const kegiatanScroll = document.getElementById("kegiatanScroll");
+const kegiatanPrev = document.getElementById("kegiatanPrev");
+const kegiatanNext = document.getElementById("kegiatanNext");
+
+kegiatanNext.addEventListener("click", () => {
+  kegiatanScroll.scrollBy({
+    left: 300,
+    behavior: "smooth"
+  });
+});
+
+kegiatanPrev.addEventListener("click", () => {
+  kegiatanScroll.scrollBy({
+    left: -300,
+    behavior: "smooth"
+  });
+});
+  </script>
+ 
+
+</body>
+</html>
