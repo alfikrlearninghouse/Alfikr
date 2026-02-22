@@ -1,0 +1,274 @@
+/* =========================
+   ARTICLE PAGE
+========================= */
+
+.article-page{
+  padding: 3.5rem 1.2rem 4rem;
+  max-width: 860px;
+  margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.article-header{
+  max-width: 680px;
+  margin: 0 auto 1.8rem;
+}
+
+.article-title{
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  line-height: 1.25;
+  color: #111;
+  margin-bottom: 1.2rem;
+}
+
+/* ============================
+   ARTICLE META (INFO ARTIKEL)
+============================ */
+
+.article-meta {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+
+  padding: 0.9rem 1rem;
+  margin: 1.2rem 0 1.6rem;
+
+  max-width: 520px;
+}
+
+/* LOGO */
+.article-meta img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+/* TEXT AREA */
+.meta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.meta-text strong {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.meta-text span {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* DARK MODE SUPPORT */
+.hero-visual.night .article-meta {
+  background: rgba(30,30,30,0.85);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.hero-visual.night .meta-text strong {
+  color: #eee;
+}
+
+.hero-visual.night .meta-text span {
+  color: #aaa;
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.article-hero{
+  max-width: 860px;
+  margin: 1.6rem auto 2.4rem;
+}
+
+.article-hero img{
+  width: 100%;
+  border-radius: 18px;
+  display: block;
+}
+
+/* =========================
+   ARTICLE BODY
+========================= */
+
+.article-body{
+  max-width: 680px;
+  margin: auto;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #222;
+}
+
+.article-body p{
+  margin-bottom: 1.4rem;
+}
+
+/* =========================
+   AUTHOR BOX
+========================= */
+
+.author-box{
+  max-width: 680px;
+  margin: 3.5rem auto 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  gap: 1rem;
+}
+
+.author-photo{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-desc h3{
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.author-desc p{
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* =========================
+   SHARE
+========================= */
+
+.article-share{
+  max-width: 680px;
+  margin: auto;
+  padding-top: 1.8rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.share-links a{
+  margin-right: 0.8rem;
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.share-links a:hover{
+  text-decoration: underline;
+}
+
+/* =========================
+   RELATED
+========================= */
+
+.related-articles{
+  max-width: 860px;
+  margin: 4rem auto 0;
+}
+
+.related-title{
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.related-card{
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  color: #111;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.related-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+}
+
+.related-card img{
+  width: 120px;
+  object-fit: cover;
+}
+
+.related-info{
+  padding: 0.8rem;
+}
+
+.related-info h3{
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.related-info p{
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* =========================
+   NIGHT MODE – FIXED
+========================= */
+
+.hero-visual.night .article-title {
+  color: #eee;
+}
+
+.hero-visual.night .article-body {
+  color: #ddd;
+}
+
+.hero-visual.night .article-meta {
+  background: rgba(30,30,30,0.9);
+  border-color: rgba(255,255,255,0.12);
+}
+
+.hero-visual.night .meta-text strong {
+  color: #eee;
+}
+
+.hero-visual.night .meta-text span {
+  color: #aaa;
+}
+
+.hero-visual.night .author-desc h3 {
+  color: #eee;
+}
+
+.hero-visual.night .author-desc p,
+.hero-visual.night .related-info p {
+  color: #aaa;
+}
+
+.hero-visual.night .related-card {
+  background: #1c1c1c;
+}
+
+.hero-visual.night .related-info h3 {
+  color: #eee;
+}
+
+.hero-visual.night .share-links a {
+  color: #eee !important;
+}
+
+.hero-visual.night .author-box,
+.hero-visual.night .article-share {
+  border-color: rgba(255,255,255,0.15);
+}
